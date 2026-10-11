@@ -1,4 +1,4 @@
-import {sessionState, formatTime, qualifyingTable} from './logic.js';
+import {sessionState, formatTime, qualifyingTable} from './logic.js?v=1.0.1';
 const $=s=>document.querySelector(s);const content=$('#content');let data,tab='calendar',standing='drivers';
 const countries={'australia':['🇦🇺','Australia'],'china':['🇨🇳','China'],'japan':['🇯🇵','Japón'],'miami':['🇺🇸','Miami'],'canada':['🇨🇦','Canadá'],'monaco':['🇲🇨','Mónaco'],'barcelona-catalunya':['🇪🇸','Barcelona-Cataluña'],'austria':['🇦🇹','Austria'],'great-britain':['🇬🇧','Gran Bretaña'],'belgium':['🇧🇪','Bélgica'],'hungary':['🇭🇺','Hungría'],'netherlands':['🇳🇱','Países Bajos'],'italy':['🇮🇹','Italia'],'spain':['🇪🇸','España'],'azerbaijan':['🇦🇿','Azerbaiyán'],'bahrain':['🇧🇭','Baréin'],'singapore':['🇸🇬','Singapur'],'united-states':['🇺🇸','Estados Unidos'],'mexico':['🇲🇽','México'],'brazil':['🇧🇷','Brasil'],'las-vegas':['🇺🇸','Las Vegas'],'qatar':['🇶🇦','Catar'],'united-arab-emirates':['🇦🇪','Abu Dabi']};
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
