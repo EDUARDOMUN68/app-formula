@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-10-11T09:12:22.723104+00:00",
+  "updatedAt": "2026-10-11T15:46:47.054129+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -17788,8 +17788,8 @@
         {
           "id": "qualifying",
           "name": "Clasificación",
-          "start": "2026-10-10T13:30:00.000Z",
-          "end": "2026-10-10T14:30:00.000Z",
+          "start": "2026-10-10T13:00:00.000Z",
+          "end": "2026-10-10T14:00:00.000Z",
           "results": {
             "headers": [
               "Pos.",
@@ -18031,7 +18031,217 @@
           "name": "Carrera",
           "start": "2026-10-11T12:00:00.000Z",
           "end": "2026-10-11T14:00:00.000Z",
-          "results": null,
+          "results": {
+            "headers": [
+              "Pos.",
+              "No.",
+              "Driver",
+              "Team",
+              "Laps",
+              "Time / Retired",
+              "Pts."
+            ],
+            "rows": [
+              [
+                "1",
+                "3",
+                "Max Verstappen",
+                "Red Bull Racing",
+                "62",
+                "1:42:00.785",
+                "25"
+              ],
+              [
+                "2",
+                "16",
+                "Charles Leclerc",
+                "Ferrari",
+                "62",
+                "+7.335s",
+                "18"
+              ],
+              [
+                "3",
+                "12",
+                "Kimi Antonelli",
+                "Mercedes",
+                "62",
+                "+24.573s",
+                "15"
+              ],
+              [
+                "4",
+                "1",
+                "Lando Norris",
+                "McLaren",
+                "62",
+                "+40.506s",
+                "12"
+              ],
+              [
+                "5",
+                "81",
+                "Oscar Piastri",
+                "McLaren",
+                "62",
+                "+49.644s",
+                "10"
+              ],
+              [
+                "6",
+                "44",
+                "Lewis Hamilton",
+                "Ferrari",
+                "62",
+                "+53.188s",
+                "8"
+              ],
+              [
+                "7",
+                "30",
+                "Liam Lawson",
+                "Racing Bulls",
+                "62",
+                "+81.666s",
+                "6"
+              ],
+              [
+                "8",
+                "27",
+                "Nico Hulkenberg",
+                "Audi",
+                "62",
+                "+83.386s",
+                "4"
+              ],
+              [
+                "9",
+                "63",
+                "George Russell",
+                "Mercedes",
+                "62",
+                "+84.677s",
+                "2"
+              ],
+              [
+                "10",
+                "6",
+                "Isack Hadjar",
+                "Red Bull Racing",
+                "62",
+                "+90.862s",
+                "1"
+              ],
+              [
+                "11",
+                "10",
+                "Pierre Gasly",
+                "Alpine",
+                "61",
+                "+1 lap",
+                "0"
+              ],
+              [
+                "12",
+                "87",
+                "Oliver Bearman",
+                "Haas F1 Team",
+                "61",
+                "+1 lap",
+                "0"
+              ],
+              [
+                "13",
+                "31",
+                "Esteban Ocon",
+                "Haas F1 Team",
+                "61",
+                "+1 lap",
+                "0"
+              ],
+              [
+                "14",
+                "55",
+                "Carlos Sainz",
+                "Williams",
+                "61",
+                "+1 lap",
+                "0"
+              ],
+              [
+                "15",
+                "41",
+                "Arvid Lindblad",
+                "Racing Bulls",
+                "61",
+                "+1 lap",
+                "0"
+              ],
+              [
+                "16",
+                "14",
+                "Fernando Alonso",
+                "Aston Martin",
+                "61",
+                "+1 lap",
+                "0"
+              ],
+              [
+                "17",
+                "11",
+                "Sergio Perez",
+                "Cadillac",
+                "60",
+                "+2 laps",
+                "0"
+              ],
+              [
+                "18",
+                "23",
+                "Alexander Albon",
+                "Williams",
+                "59",
+                "DNF",
+                "0"
+              ],
+              [
+                "19",
+                "77",
+                "Valtteri Bottas",
+                "Cadillac",
+                "59",
+                "+3 laps",
+                "0"
+              ],
+              [
+                "NC",
+                "18",
+                "Lance Stroll",
+                "Aston Martin",
+                "36",
+                "DNF",
+                "0"
+              ],
+              [
+                "NC",
+                "43",
+                "Franco Colapinto",
+                "Alpine",
+                "29",
+                "DNF",
+                "0"
+              ],
+              [
+                "NC",
+                "5",
+                "Gabriel Bortoleto",
+                "Audi",
+                "7",
+                "DNF",
+                "0"
+              ]
+            ]
+          },
           "source": "https://www.formula1.com/en/results/2026/races/1296/singapore/race-result"
         }
       ],
@@ -18364,63 +18574,63 @@
         "Kimi Antonelli",
         "ITA",
         "Mercedes",
-        "325"
+        "340"
       ],
       [
         "2",
         "George Russell",
         "GBR",
         "Mercedes",
-        "236"
+        "238"
       ],
       [
         "3",
         "Lewis Hamilton",
         "GBR",
         "Ferrari",
-        "221"
+        "229"
       ],
       [
         "4",
-        "Charles Leclerc",
-        "MON",
-        "Ferrari",
-        "197"
-      ],
-      [
-        "5",
         "Max Verstappen",
         "NED",
         "Red Bull Racing",
-        "196"
+        "221"
+      ],
+      [
+        "5",
+        "Charles Leclerc",
+        "MON",
+        "Ferrari",
+        "215"
       ],
       [
         "6",
         "Lando Norris",
         "GBR",
         "McLaren",
-        "189"
+        "201"
       ],
       [
         "7",
         "Oscar Piastri",
         "AUS",
         "McLaren",
-        "128"
+        "138"
       ],
       [
         "8",
         "Isack Hadjar",
         "FRA",
         "Red Bull Racing",
-        "96"
+        "97"
       ],
       [
         "9",
         "Liam Lawson",
         "NZL",
         "Racing Bulls",
-        "69"
+        "75"
       ],
       [
         "10",
@@ -18452,17 +18662,17 @@
       ],
       [
         "14",
+        "Nico Hulkenberg",
+        "GER",
+        "Audi",
+        "13"
+      ],
+      [
+        "15",
         "Gabriel Bortoleto",
         "BRA",
         "Audi",
         "10"
-      ],
-      [
-        "15",
-        "Nico Hulkenberg",
-        "GER",
-        "Audi",
-        "9"
       ],
       [
         "16",
@@ -18532,27 +18742,27 @@
       [
         "1",
         "Mercedes",
-        "561"
+        "578"
       ],
       [
         "2",
         "Ferrari",
-        "418"
+        "444"
       ],
       [
         "3",
         "McLaren",
-        "317"
+        "339"
       ],
       [
         "4",
         "Red Bull Racing",
-        "306"
+        "332"
       ],
       [
         "5",
         "Racing Bulls",
-        "94"
+        "100"
       ],
       [
         "6",
@@ -18567,7 +18777,7 @@
       [
         "8",
         "Audi",
-        "19"
+        "23"
       ],
       [
         "9",
