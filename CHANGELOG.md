@@ -1,5 +1,10 @@
 # Registro de cambios
 
+## 1.0.1 — 2026-10-11
+
+- Clasificación y clasificación sprint simplificadas: ronda alcanzada y diferencia en segundos respecto a la pole, sin las tres columnas de tiempos.
+- Diferencias calculadas con precisión de milisegundos y estados explícitos cuando no hay tiempo válido.
+
 ## 1.0.0 — 2026-10-11
 
 - Calendario oficial de la temporada con todas las sesiones de cada gran premio.

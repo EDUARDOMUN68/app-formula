@@ -2,7 +2,7 @@
 
 Aplicación web en español para consultar la temporada de Fórmula 1, con dos pestañas: **Calendario** y **Campeonato**. Todos los horarios se muestran en hora de España peninsular (`Europe/Madrid`), con cambio de verano e invierno automático.
 
-El calendario incluye cada gran premio y sus sesiones: libres, clasificación, clasificación sprint, sprint y carrera, según el formato oficial. Cada sesión presenta su horario y, cuando están publicados, sus resultados. Los resultados de clasificación y sprint se pueden consultar aunque la carrera siga pendiente. No hay seguimiento en directo.
+El calendario incluye cada gran premio y sus sesiones: libres, clasificación, clasificación sprint, sprint y carrera, según el formato oficial. Cada sesión presenta su horario y, cuando están publicados, sus resultados. Los resultados de clasificación y sprint se pueden consultar aunque la carrera siga pendiente. La clasificación y clasificación sprint muestran solo la ronda alcanzada y la diferencia en segundos respecto a la pole, calculada con el tiempo de esa ronda. Las rondas se disputan en momentos distintos; si no hay tiempo en la última ronda, se indica Sin tiempo. No hay seguimiento en directo.
 
 Campeonato contiene las clasificaciones oficiales de pilotos y constructores. Los puntos se importan de la fuente y no se calculan a partir de las carreras, de modo que se conservan las decisiones y correcciones oficiales.
 
