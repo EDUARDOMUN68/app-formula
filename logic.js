@@ -1,0 +1,2 @@
+export function formatTime(value){return new Intl.DateTimeFormat('es-ES',{hour:'2-digit',minute:'2-digit',hourCycle:'h23',timeZone:'Europe/Madrid'}).format(new Date(value));}
+export function sessionState(session,now=Date.now()){if(session.results?.rows?.length)return 'Resultados disponibles';if(now<new Date(session.start).getTime())return 'Programada';if(now<new Date(session.end).getTime())return 'Pendiente de finalizar';return 'Resultados pendientes de publicación';}
