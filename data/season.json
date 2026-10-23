@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-10-23T18:25:46.369048+00:00",
+  "updatedAt": "2026-10-23T22:16:32.904468+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -18261,7 +18261,194 @@
           "name": "Libres 1",
           "start": "2026-10-23T17:30:00.000Z",
           "end": "2026-10-23T18:30:00.000Z",
-          "results": null,
+          "results": {
+            "headers": [
+              "Pos.",
+              "No.",
+              "Driver",
+              "Team",
+              "Time / Gap",
+              "Laps"
+            ],
+            "rows": [
+              [
+                "1",
+                "16",
+                "Charles Leclerc",
+                "Ferrari",
+                "1:36.052",
+                "26"
+              ],
+              [
+                "2",
+                "3",
+                "Max Verstappen",
+                "Red Bull Racing",
+                "+0.084s",
+                "25"
+              ],
+              [
+                "3",
+                "1",
+                "Lando Norris",
+                "McLaren",
+                "+0.245s",
+                "22"
+              ],
+              [
+                "4",
+                "63",
+                "George Russell",
+                "Mercedes",
+                "+0.326s",
+                "26"
+              ],
+              [
+                "5",
+                "12",
+                "Kimi Antonelli",
+                "Mercedes",
+                "+0.481s",
+                "25"
+              ],
+              [
+                "6",
+                "44",
+                "Lewis Hamilton",
+                "Ferrari",
+                "+0.503s",
+                "23"
+              ],
+              [
+                "7",
+                "81",
+                "Oscar Piastri",
+                "McLaren",
+                "+0.734s",
+                "23"
+              ],
+              [
+                "8",
+                "5",
+                "Gabriel Bortoleto",
+                "Audi",
+                "+0.943s",
+                "23"
+              ],
+              [
+                "9",
+                "41",
+                "Arvid Lindblad",
+                "Racing Bulls",
+                "+1.011s",
+                "26"
+              ],
+              [
+                "10",
+                "30",
+                "Liam Lawson",
+                "Racing Bulls",
+                "+1.257s",
+                "22"
+              ],
+              [
+                "11",
+                "87",
+                "Oliver Bearman",
+                "Haas F1 Team",
+                "+1.613s",
+                "23"
+              ],
+              [
+                "12",
+                "14",
+                "Fernando Alonso",
+                "Aston Martin",
+                "+1.636s",
+                "22"
+              ],
+              [
+                "13",
+                "18",
+                "Lance Stroll",
+                "Aston Martin",
+                "+1.731s",
+                "25"
+              ],
+              [
+                "14",
+                "6",
+                "Isack Hadjar",
+                "Red Bull Racing",
+                "+1.738s",
+                "23"
+              ],
+              [
+                "15",
+                "10",
+                "Pierre Gasly",
+                "Alpine",
+                "+1.749s",
+                "23"
+              ],
+              [
+                "16",
+                "31",
+                "Esteban Ocon",
+                "Haas F1 Team",
+                "+1.844s",
+                "26"
+              ],
+              [
+                "17",
+                "43",
+                "Franco Colapinto",
+                "Alpine",
+                "+2.069s",
+                "23"
+              ],
+              [
+                "18",
+                "27",
+                "Nico Hulkenberg",
+                "Audi",
+                "+2.070s",
+                "21"
+              ],
+              [
+                "19",
+                "55",
+                "Carlos Sainz",
+                "Williams",
+                "+2.794s",
+                "19"
+              ],
+              [
+                "20",
+                "77",
+                "Valtteri Bottas",
+                "Cadillac",
+                "+3.001s",
+                "21"
+              ],
+              [
+                "21",
+                "25",
+                "Colton Herta",
+                "Cadillac",
+                "+3.927s",
+                "21"
+              ],
+              [
+                "22",
+                "23",
+                "Alexander Albon",
+                "Williams",
+                "+40.416s",
+                "19"
+              ]
+            ]
+          },
           "source": "https://www.formula1.com/en/results/2026/races/1297/united-states/practice/1"
         },
         {
@@ -18269,7 +18456,20 @@
           "name": "Libres 2",
           "start": "2026-10-23T21:00:00.000Z",
           "end": "2026-10-23T22:00:00.000Z",
-          "results": null,
+          "results": {
+            "headers": [
+              "Pos.",
+              "No.",
+              "Driver",
+              "Team",
+              "Time / Gap"
+            ],
+            "rows": [
+              [
+                "ErrorNo results available"
+              ]
+            ]
+          },
           "source": "https://www.formula1.com/en/results/2026/races/1297/united-states/practice/2"
         },
         {
