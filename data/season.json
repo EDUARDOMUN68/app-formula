@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-10-23T22:16:32.904468+00:00",
+  "updatedAt": "2026-10-24T00:49:32.473442+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -18462,11 +18462,185 @@
               "No.",
               "Driver",
               "Team",
-              "Time / Gap"
+              "Time / Gap",
+              "Laps"
             ],
             "rows": [
               [
-                "ErrorNo results available"
+                "1",
+                "16",
+                "Charles Leclerc",
+                "Ferrari",
+                "1:35.291",
+                "30"
+              ],
+              [
+                "2",
+                "12",
+                "Kimi Antonelli",
+                "Mercedes",
+                "+0.042s",
+                "25"
+              ],
+              [
+                "3",
+                "3",
+                "Max Verstappen",
+                "Red Bull Racing",
+                "+0.189s",
+                "24"
+              ],
+              [
+                "4",
+                "44",
+                "Lewis Hamilton",
+                "Ferrari",
+                "+0.615s",
+                "26"
+              ],
+              [
+                "5",
+                "63",
+                "George Russell",
+                "Mercedes",
+                "+0.744s",
+                "27"
+              ],
+              [
+                "6",
+                "30",
+                "Liam Lawson",
+                "Racing Bulls",
+                "+1.040s",
+                "27"
+              ],
+              [
+                "7",
+                "1",
+                "Lando Norris",
+                "McLaren",
+                "+1.082s",
+                "27"
+              ],
+              [
+                "8",
+                "81",
+                "Oscar Piastri",
+                "McLaren",
+                "+1.096s",
+                "27"
+              ],
+              [
+                "9",
+                "6",
+                "Isack Hadjar",
+                "Red Bull Racing",
+                "+1.120s",
+                "24"
+              ],
+              [
+                "10",
+                "87",
+                "Oliver Bearman",
+                "Haas F1 Team",
+                "+1.245s",
+                "28"
+              ],
+              [
+                "11",
+                "5",
+                "Gabriel Bortoleto",
+                "Audi",
+                "+1.541s",
+                "27"
+              ],
+              [
+                "12",
+                "10",
+                "Pierre Gasly",
+                "Alpine",
+                "+1.549s",
+                "27"
+              ],
+              [
+                "13",
+                "41",
+                "Arvid Lindblad",
+                "Racing Bulls",
+                "+1.668s",
+                "29"
+              ],
+              [
+                "14",
+                "31",
+                "Esteban Ocon",
+                "Haas F1 Team",
+                "+1.820s",
+                "26"
+              ],
+              [
+                "15",
+                "43",
+                "Franco Colapinto",
+                "Alpine",
+                "+1.910s",
+                "32"
+              ],
+              [
+                "16",
+                "14",
+                "Fernando Alonso",
+                "Aston Martin",
+                "+1.944s",
+                "26"
+              ],
+              [
+                "17",
+                "18",
+                "Lance Stroll",
+                "Aston Martin",
+                "+1.978s",
+                "28"
+              ],
+              [
+                "18",
+                "27",
+                "Nico Hulkenberg",
+                "Audi",
+                "+2.139s",
+                "26"
+              ],
+              [
+                "19",
+                "77",
+                "Valtteri Bottas",
+                "Cadillac",
+                "+3.131s",
+                "24"
+              ],
+              [
+                "20",
+                "55",
+                "Carlos Sainz",
+                "Williams",
+                "+3.155s",
+                "28"
+              ],
+              [
+                "21",
+                "11",
+                "Sergio Perez",
+                "Cadillac",
+                "+3.745s",
+                "24"
+              ],
+              [
+                "22",
+                "23",
+                "Alexander Albon",
+                "Williams",
+                "+8.135s",
+                "27"
               ]
             ]
           },
