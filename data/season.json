@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-10-30T15:59:01.397193+00:00",
+  "updatedAt": "2026-10-30T20:51:17.822968+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -19317,7 +19317,194 @@
           "name": "Libres 1",
           "start": "2026-10-30T18:30:00.000Z",
           "end": "2026-10-30T19:30:00.000Z",
-          "results": null,
+          "results": {
+            "headers": [
+              "Pos.",
+              "No.",
+              "Driver",
+              "Team",
+              "Time / Gap",
+              "Laps"
+            ],
+            "rows": [
+              [
+                "1",
+                "16",
+                "Charles Leclerc",
+                "Ferrari",
+                "1:18.128",
+                "29"
+              ],
+              [
+                "2",
+                "12",
+                "Kimi Antonelli",
+                "Mercedes",
+                "+0.659s",
+                "30"
+              ],
+              [
+                "3",
+                "72",
+                "Frederik Vesti",
+                "Mercedes",
+                "+0.733s",
+                "24"
+              ],
+              [
+                "4",
+                "44",
+                "Lewis Hamilton",
+                "Ferrari",
+                "+0.738s",
+                "25"
+              ],
+              [
+                "5",
+                "36",
+                "Ayumu Iwasa",
+                "Red Bull Racing",
+                "+0.985s",
+                "23"
+              ],
+              [
+                "6",
+                "10",
+                "Pierre Gasly",
+                "Alpine",
+                "+1.082s",
+                "33"
+              ],
+              [
+                "7",
+                "14",
+                "Fernando Alonso",
+                "Aston Martin",
+                "+1.229s",
+                "29"
+              ],
+              [
+                "8",
+                "81",
+                "Oscar Piastri",
+                "McLaren",
+                "+1.248s",
+                "30"
+              ],
+              [
+                "9",
+                "87",
+                "Oliver Bearman",
+                "Haas F1 Team",
+                "+1.284s",
+                "28"
+              ],
+              [
+                "10",
+                "41",
+                "Arvid Lindblad",
+                "Racing Bulls",
+                "+1.350s",
+                "30"
+              ],
+              [
+                "11",
+                "6",
+                "Isack Hadjar",
+                "Red Bull Racing",
+                "+1.417s",
+                "21"
+              ],
+              [
+                "12",
+                "91",
+                "Nikola Tsolov",
+                "Racing Bulls",
+                "+1.476s",
+                "29"
+              ],
+              [
+                "13",
+                "27",
+                "Nico Hulkenberg",
+                "Audi",
+                "+1.480s",
+                "27"
+              ],
+              [
+                "14",
+                "62",
+                "Gabriele Mini",
+                "Alpine",
+                "+1.818s",
+                "22"
+              ],
+              [
+                "15",
+                "50",
+                "Ryo Hirakawa",
+                "Haas F1 Team",
+                "+1.854s",
+                "30"
+              ],
+              [
+                "16",
+                "55",
+                "Carlos Sainz",
+                "Williams",
+                "+1.878s",
+                "31"
+              ],
+              [
+                "17",
+                "67",
+                "Leonardo Fornaroli",
+                "McLaren",
+                "+2.107s",
+                "25"
+              ],
+              [
+                "18",
+                "11",
+                "Sergio Perez",
+                "Cadillac",
+                "+2.267s",
+                "31"
+              ],
+              [
+                "19",
+                "34",
+                "Jak Crawford",
+                "Aston Martin",
+                "+2.675s",
+                "15"
+              ],
+              [
+                "20",
+                "46",
+                "Luke Browning",
+                "Williams",
+                "+2.741s",
+                "33"
+              ],
+              [
+                "21",
+                "98",
+                "Freddie Slater",
+                "Audi",
+                "+2.817s",
+                "14"
+              ],
+              [
+                "22",
+                "25",
+                "Colton Herta",
+                "Cadillac",
+                "+3.237s",
+                "30"
+              ]
+            ]
+          },
           "source": "https://www.formula1.com/en/results/2026/races/1298/mexico/practice/1"
         },
         {
