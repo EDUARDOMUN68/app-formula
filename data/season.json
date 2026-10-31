@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-10-31T13:41:33.157185+00:00",
+  "updatedAt": "2026-10-31T18:37:07.392777+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -23872,7 +23872,20 @@
           "name": "Libres 3",
           "start": "2026-10-31T17:30:00.000Z",
           "end": "2026-10-31T18:30:00.000Z",
-          "results": null,
+          "results": {
+            "headers": [
+              "Pos.",
+              "No.",
+              "Driver",
+              "Team",
+              "Time / Gap"
+            ],
+            "rows": [
+              [
+                "ErrorNo results available"
+              ]
+            ]
+          },
           "source": "https://www.formula1.com/en/results/2026/races/1298/mexico/practice/3"
         },
         {
