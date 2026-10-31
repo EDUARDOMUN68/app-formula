@@ -1,5 +1,12 @@
 # Registro de cambios
 
+## 1.1.0 — 2026-10-31
+
+- Parrillas oficiales de carrera y sprint con dos coches por fila, escalonados y colores por equipo.
+- Apartado separado de salidas desde boxes a partir de las notas oficiales; sin deducir penalizaciones de los resultados de clasificación.
+- Estado pendiente cuando la parrilla no se ha publicado y enlace a la fuente.
+- Fondos claros y caché renovada de los archivos de interfaz.
+
 ## 1.0.1 — 2026-10-11
 
 - Clasificación y clasificación sprint simplificadas: ronda alcanzada y diferencia en segundos respecto a la pole, sin las tres columnas de tiempos.

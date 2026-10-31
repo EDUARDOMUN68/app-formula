@@ -1,10 +1,26 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {formatTime,sessionState,qualifyingTable} from '../logic.js';
+import {formatTime,sessionState,qualifyingTable,gridEntries} from '../logic.js';
 test('hora peninsular cambia con verano/invierno y cruza medianoche',()=>{
   assert.equal(formatTime('2026-10-11T12:00:00Z'),'14:00');
   assert.equal(formatTime('2026-12-06T13:00:00Z'),'14:00');
   assert.equal(formatTime('2026-11-22T23:30:00Z'),'00:30');
+});
+
+test('parrilla usa puestos oficiales, conserva huecos y separa boxes',()=>{
+  const grid={results:{headers:['Pos.','No.','Driver','Team'],rows:[
+    ['4','14','Alonso','Aston Martin'],['1','3','Verstappen','Red Bull Racing'],
+    ['3','63','Russell','Mercedes'],['2','16','Leclerc','Ferrari'],
+    ['DNS','11','Perez','Cadillac']
+  ]},pitLaneNumbers:['14']};
+  const entries=gridEntries(grid);
+  assert.deepEqual(entries.track.map(e=>e.position),[1,2,3]);
+  assert.deepEqual(entries.pitLane.map(e=>e.driver),['Alonso']);
+  assert.equal(entries.other[0].driver,'Perez');
+  assert.equal(grid.results.rows[0][0],'4');
+  const gap=gridEntries({...grid,pitLaneNumbers:['16']});
+  assert.deepEqual(gap.track.map(e=>e.position),[1,3,4]);
+  assert.equal(gridEntries(null),null);
 });
 
 test('clasificación compacta compara la última ronda con la pole con precisión de milisegundos',()=>{

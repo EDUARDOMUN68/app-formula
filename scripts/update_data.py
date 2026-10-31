@@ -7,6 +7,8 @@ import os
 from pathlib import Path
 import re
 import urllib.request
+import urllib.error
+import unicodedata
 from html.parser import HTMLParser
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,6 +47,39 @@ def table(source):
     if len(parser.rows)<2: return None
     return {'headers':parser.rows[0], 'rows':parser.rows[1:]}
 
+def starting_grid(source):
+    """Conservar el orden oficial y leer las salidas desde boxes en sus notas."""
+    result = table(source)
+    required = ['Pos.', 'No.', 'Driver', 'Team']
+    if not result or any(name not in result['headers'] for name in required):
+        return None
+    if any(len(row) != len(result['headers']) for row in result['rows']):
+        return None
+    indices = {name: result['headers'].index(name) for name in required}
+    if not all(row[indices['No.']].isdigit() for row in result['rows']):
+        return None
+    tail = source.partition('</table>')[2].partition('</main>')[0]
+    text = ' '.join(html.unescape(re.sub(r'<[^>]+>', ' ', tail)).split())
+    note = re.search(r'Note\s*[-–]\s*(.*)', text)
+    notes = note.group(1) if note else ''
+    def normalize(value):
+        return ''.join(c for c in unicodedata.normalize('NFKD', value.casefold()) if not unicodedata.combining(c))
+    pit_subjects = re.findall(r'(?:^|[.!?])\s*([^.!?]+?)\s+(?:(?:is|are)\s+)?required to start from (?:the )?pit lane', notes, re.I)
+    sentences = [sentence.strip() for sentence in re.split(r'[.!?]', notes) if sentence.strip()]
+    for previous, current in zip(sentences, sentences[1:]):
+        if re.match(r'Required to start from (?:the )?pit lane\b', current, re.I):
+            # Algunas notas continúan con una segunda frase sin repetir el apellido.
+            mentioned = [row for row in result['rows'] if re.search(r'\b'+re.escape(normalize(row[indices['Driver']].split()[-1]))+r'\b', normalize(previous))]
+            if len(mentioned) == 1:
+                pit_subjects.append(mentioned[0][indices['Driver']])
+    pit_numbers = []
+    for row in result['rows']:
+        surname = normalize(row[indices['Driver']].split()[-1])
+        explicit = normalize(row[indices['Pos.']]) in ('pl', 'pit', 'pit lane')
+        if explicit or any(re.search(r'\b'+re.escape(surname)+r'\b', normalize(subject)) for subject in pit_subjects):
+            pit_numbers.append(row[indices['No.']])
+    return {'results': result, 'pitLaneNumbers': pit_numbers, 'notes': notes, 'schemaVersion': 1}
+
 def schema(source):
     for raw in re.findall(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',source,re.S):
         value=json.loads(html.unescape(raw))
@@ -81,6 +116,24 @@ def main():
                 results=table(fetch(url))
             sessions.append({'id':SLUGS[name],'name':LABELS[name],'start':event['startDate'],'end':event['endDate'],'results':results,'source':BASE+url})
         if not sessions: raise ValueError('Sin sesiones: '+slug)
+        for session in sessions:
+            if session['id'] not in ('race-result', 'sprint-results'):
+                continue
+            qualifying_id = 'qualifying' if session['id'] == 'race-result' else 'sprint-qualifying'
+            qualifying = next((s for s in sessions if s['id'] == qualifying_id), None)
+            grid_path = prefix + ('/starting-grid' if session['id'] == 'race-result' else '/sprint-grid')
+            old_session = next((s for s in old.get(slug, {}).get('sessions', []) if s['id'] == session['id']), {})
+            grid = old_session.get('grid')
+            end = dt.datetime.fromisoformat(session['end'].replace('Z', '+00:00'))
+            if qualifying and dt.datetime.fromisoformat(qualifying['start'].replace('Z', '+00:00')) <= now and (not grid or grid.get('schemaVersion') != 1 or now-end < dt.timedelta(days=7)):
+                try:
+                    grid = starting_grid(fetch(grid_path))
+                except urllib.error.HTTPError as error:
+                    if error.code != 404:
+                        raise
+                    grid = None
+            session['grid'] = {**grid, 'source': BASE+grid_path} if grid else None
+            session['gridSource'] = BASE+grid_path
         track=re.search(r'<img[^>]+src="([^"]+/track/[^" ]+)"', source)
         return {'id':slug,'name':info['name'],'location':info.get('location',{}).get('name',''),'trackImage':html.unescape(track.group(1)) if track else None,'start':info['startDate'],'end':info['endDate'],'source':BASE+path,'sessions':sessions}
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:

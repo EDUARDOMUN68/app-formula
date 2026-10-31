@@ -6,6 +6,12 @@ El calendario incluye cada gran premio y sus sesiones: libres, clasificación, c
 
 Campeonato contiene las clasificaciones oficiales de pilotos y constructores. Los puntos se importan de la fuente y no se calculan a partir de las carreras, de modo que se conservan las decisiones y correcciones oficiales.
 
+## Parrilla de salida
+
+Cada carrera y sprint dispone de una parrilla visual independiente de la clasificación: dos coches por fila, escalonados, con posición oficial, dorsal, piloto y equipo. Es un esquema de orden de salida; el lado de la pole depende del circuito. Los puestos proceden de las tablas oficiales, sin aplicar penalizaciones por cuenta propia ni reconstruirlos desde la clasificación. Las notas oficiales permiten separar las salidas desde boxes, que no ocupan un cajón en la pista. Se conservan los números de puesto y sus posibles huecos. Las notas originales en inglés pueden consultarse desplegadas.
+
+Si la parrilla no está publicada, se indica expresamente y no se dibuja una parrilla supuesta. Se comprueba periódicamente desde el inicio de la clasificación hasta siete días después de la carrera, para recoger cambios oficiales de última hora.
+
 ## Datos y actualización
 
 La única fuente del importador es [formula1.com](https://www.formula1.com/en/racing/2026). El calendario se obtiene de sus eventos estructurados y los resultados y campeonatos de sus tablas públicas. No utiliza una API de terceros ni datos ficticios. Cada tabla incluye un enlace a su publicación original.
