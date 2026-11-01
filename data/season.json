@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-01T17:09:45.104835+00:00",
+  "updatedAt": "2026-11-01T21:13:34.730739+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -24477,7 +24477,7 @@
               ]
             },
             "pitLaneNumbers": [],
-            "notes": "Verstappen was handed a one-place grid penalty for a collision in FP2. Bottas starts from the back of the grid after taking multiple new PU components. Lawson was handed a one-place grid penalty for a collision in FP2, and was disqualified from Qualifying for a technical breach of the rules and races at the stewards' discretion.",
+            "notes": "Verstappen was handed a one-place grid penalty for a collision in FP2. Bottas starts from the back of the grid after taking multiple new PU components. Lawson was handed a one-place grid penalty for a collision in FP2, and was disqualified from Qualifying for a technical breach of the rules. He starts from the pit lane after taking new PU components and changing his set-up under parc ferme conditions.",
             "schemaVersion": 1,
             "source": "https://www.formula1.com/en/results/2026/races/1298/mexico/starting-grid"
           },
