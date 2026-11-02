@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-02T07:43:36.959820+00:00",
+  "updatedAt": "2026-11-02T18:28:58.540606+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -24307,7 +24307,7 @@
           "id": "race-result",
           "name": "Carrera",
           "start": "2026-11-01T20:00:00.000Z",
-          "end": "2026-11-01T23:00:00.000Z",
+          "end": "2026-11-01T22:00:00.000Z",
           "results": {
             "headers": [
               "Pos.",
