@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-06T15:58:21.821847+00:00",
+  "updatedAt": "2026-11-06T21:34:01.927245+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -24710,7 +24710,194 @@
           "name": "Libres 1",
           "start": "2026-11-06T15:30:00.000Z",
           "end": "2026-11-06T16:30:00.000Z",
-          "results": null,
+          "results": {
+            "headers": [
+              "Pos.",
+              "No.",
+              "Driver",
+              "Team",
+              "Time / Gap",
+              "Laps"
+            ],
+            "rows": [
+              [
+                "1",
+                "1",
+                "Lando Norris",
+                "McLaren",
+                "1:11.717",
+                "33"
+              ],
+              [
+                "2",
+                "12",
+                "Kimi Antonelli",
+                "Mercedes",
+                "+0.082s",
+                "32"
+              ],
+              [
+                "3",
+                "3",
+                "Max Verstappen",
+                "Red Bull Racing",
+                "+0.236s",
+                "29"
+              ],
+              [
+                "4",
+                "44",
+                "Lewis Hamilton",
+                "Ferrari",
+                "+0.324s",
+                "31"
+              ],
+              [
+                "5",
+                "63",
+                "George Russell",
+                "Mercedes",
+                "+0.386s",
+                "30"
+              ],
+              [
+                "6",
+                "6",
+                "Isack Hadjar",
+                "Red Bull Racing",
+                "+0.439s",
+                "25"
+              ],
+              [
+                "7",
+                "62",
+                "Gabriele Mini",
+                "Alpine",
+                "+0.852s",
+                "28"
+              ],
+              [
+                "8",
+                "5",
+                "Gabriel Bortoleto",
+                "Audi",
+                "+0.897s",
+                "30"
+              ],
+              [
+                "9",
+                "43",
+                "Franco Colapinto",
+                "Alpine",
+                "+0.937s",
+                "34"
+              ],
+              [
+                "10",
+                "30",
+                "Liam Lawson",
+                "Racing Bulls",
+                "+0.998s",
+                "32"
+              ],
+              [
+                "11",
+                "67",
+                "Leonardo Fornaroli",
+                "McLaren",
+                "+1.116s",
+                "28"
+              ],
+              [
+                "12",
+                "87",
+                "Oliver Bearman",
+                "Haas F1 Team",
+                "+1.120s",
+                "27"
+              ],
+              [
+                "13",
+                "14",
+                "Fernando Alonso",
+                "Aston Martin",
+                "+1.300s",
+                "26"
+              ],
+              [
+                "14",
+                "41",
+                "Arvid Lindblad",
+                "Racing Bulls",
+                "+1.321s",
+                "32"
+              ],
+              [
+                "15",
+                "77",
+                "Valtteri Bottas",
+                "Cadillac",
+                "+1.654s",
+                "16"
+              ],
+              [
+                "16",
+                "23",
+                "Alexander Albon",
+                "Williams",
+                "+1.794s",
+                "18"
+              ],
+              [
+                "17",
+                "46",
+                "Luke Browning",
+                "Williams",
+                "+1.874s",
+                "12"
+              ],
+              [
+                "18",
+                "51",
+                "Rafael Câmara",
+                "Haas F1 Team",
+                "+1.979s",
+                "30"
+              ],
+              [
+                "19",
+                "18",
+                "Lance Stroll",
+                "Aston Martin",
+                "+2.043s",
+                "28"
+              ],
+              [
+                "20",
+                "25",
+                "Colton Herta",
+                "Cadillac",
+                "+2.558s",
+                "31"
+              ],
+              [
+                "21",
+                "38",
+                "Dino Beganovic",
+                "Ferrari",
+                "+2.640s",
+                "11"
+              ],
+              [
+                "22",
+                "98",
+                "Freddie Slater",
+                "Audi",
+                "+3.249s",
+                "7"
+              ]
+            ]
+          },
           "source": "https://www.formula1.com/en/results/2026/races/1299/brazil/practice/1"
         },
         {
@@ -24718,7 +24905,186 @@
           "name": "Libres 2",
           "start": "2026-11-06T19:00:00.000Z",
           "end": "2026-11-06T20:00:00.000Z",
-          "results": null,
+          "results": {
+            "headers": [
+              "Pos.",
+              "No.",
+              "Driver",
+              "Team",
+              "Time / Gap",
+              "Laps"
+            ],
+            "rows": [
+              [
+                "1",
+                "12",
+                "Kimi Antonelli",
+                "Mercedes",
+                "1:10.763",
+                "37"
+              ],
+              [
+                "2",
+                "1",
+                "Lando Norris",
+                "McLaren",
+                "+0.253s",
+                "31"
+              ],
+              [
+                "3",
+                "3",
+                "Max Verstappen",
+                "Red Bull Racing",
+                "+0.259s",
+                "23"
+              ],
+              [
+                "4",
+                "63",
+                "George Russell",
+                "Mercedes",
+                "+0.273s",
+                "35"
+              ],
+              [
+                "5",
+                "81",
+                "Oscar Piastri",
+                "McLaren",
+                "+0.321s",
+                "32"
+              ],
+              [
+                "6",
+                "44",
+                "Lewis Hamilton",
+                "Ferrari",
+                "+0.450s",
+                "35"
+              ],
+              [
+                "7",
+                "16",
+                "Charles Leclerc",
+                "Ferrari",
+                "+0.720s",
+                "33"
+              ],
+              [
+                "8",
+                "5",
+                "Gabriel Bortoleto",
+                "Audi",
+                "+1.017s",
+                "33"
+              ],
+              [
+                "9",
+                "6",
+                "Isack Hadjar",
+                "Red Bull Racing",
+                "+1.076s",
+                "33"
+              ],
+              [
+                "10",
+                "87",
+                "Oliver Bearman",
+                "Haas F1 Team",
+                "+1.228s",
+                "36"
+              ],
+              [
+                "11",
+                "43",
+                "Franco Colapinto",
+                "Alpine",
+                "+1.233s",
+                "33"
+              ],
+              [
+                "12",
+                "41",
+                "Arvid Lindblad",
+                "Racing Bulls",
+                "+1.245s",
+                "36"
+              ],
+              [
+                "13",
+                "30",
+                "Liam Lawson",
+                "Racing Bulls",
+                "+1.279s",
+                "36"
+              ],
+              [
+                "14",
+                "10",
+                "Pierre Gasly",
+                "Alpine",
+                "+1.346s",
+                "37"
+              ],
+              [
+                "15",
+                "14",
+                "Fernando Alonso",
+                "Aston Martin",
+                "+1.775s",
+                "34"
+              ],
+              [
+                "16",
+                "51",
+                "Rafael Câmara",
+                "Haas F1 Team",
+                "+1.798s",
+                "30"
+              ],
+              [
+                "17",
+                "55",
+                "Carlos Sainz",
+                "Williams",
+                "+1.979s",
+                "33"
+              ],
+              [
+                "18",
+                "18",
+                "Lance Stroll",
+                "Aston Martin",
+                "+2.179s",
+                "31"
+              ],
+              [
+                "19",
+                "23",
+                "Alexander Albon",
+                "Williams",
+                "+2.190s",
+                "37"
+              ],
+              [
+                "20",
+                "11",
+                "Sergio Perez",
+                "Cadillac",
+                "+2.553s",
+                "34"
+              ],
+              [
+                "21",
+                "77",
+                "Valtteri Bottas",
+                "Cadillac",
+                "+2.620s",
+                "33"
+              ]
+            ]
+          },
           "source": "https://www.formula1.com/en/results/2026/races/1299/brazil/practice/2"
         },
         {
