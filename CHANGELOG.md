@@ -2,7 +2,7 @@
 
 ## 1.2.0 — 2026-11-07
 
-- Preparados avisos push propios diez minutos antes de cada sesión, con servicio independiente de Cloudflare y horarios oficiales.
+- Añadidos avisos push propios diez minutos antes de cada sesión, con servicio independiente de Cloudflare y horarios oficiales.
 - Campana, panel de estado, baja explícita y prueba de 30 segundos con la app cerrada.
 - Receptor sin ventana, deduplicación, descarte de avisos caducados y acceso directo al gran premio.
 - Caché 1.2.0 limitada a esta aplicación para no borrar las cachés de otras apps del mismo dominio.
