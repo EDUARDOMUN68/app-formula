@@ -1,0 +1,56 @@
+const test=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
+function app({preference=null,permission='granted',offline=false,unsubscribeFails=false,oldReceiver=false,panel=false}={}){
+ const calls=[],toasts=[],attrs={},storage=new Map(preference===null?[]:[['formula-push-enabled',preference]]);
+ let subscription={endpoint:'https://push.example/device',async unsubscribe(){calls.push('unsubscribe');if(unsubscribeFails)return false;subscription=null;return true;}},requested=0;
+ const button={setAttribute(k,v){attrs[k]=v;}},notification={permission,async requestPermission(){requested++;this.permission='granted';return 'granted';}};
+ const elements=panel?{pushPanel:{open:false,showModal(){this.open=true;},close(){this.open=false;}},pushStatus:{},pushRepair:{},pushDisable:{},pushClose:{},pushTest:{},pushReceived:{}}:{};
+ const registration={active:{postMessage(data,ports){if(oldReceiver)return;ports[0].other.onmessage({data:{ready:true,version:'1.2.0',confirmationReceived:true}});}},pushManager:{async getSubscription(){return subscription;},async subscribe(){calls.push('subscribe');subscription={endpoint:'new',unsubscribe:async()=>true};return subscription;}}};
+ const context={URL,Uint8Array,atob,AbortSignal,Date,Promise,setTimeout(fn,ms){return setTimeout(()=>{if(ms===1000)oldReceiver=false;fn();},ms===1000?5:ms);},clearTimeout,
+ window:{FORMULA_PUSH_API:'https://service.example',PushManager:{},Notification:{},showRefreshMessage:t=>toasts.push(t)},Notification:notification,
+ localStorage:{getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,v)},navigator:{serviceWorker:{ready:Promise.resolve(registration)}},
+ document:{getElementById:id=>id==='pushToggle'?button:elements[id]||null},
+ MessageChannel:class{constructor(){this.port1={close(){}};this.port2={other:this.port1};}},
+ async fetch(url,options){calls.push((options.method||'GET')+' '+url.pathname);if(offline)throw Error('offline');return {ok:true,json:async()=>url.pathname==='/config'?{ready:true,publicKey:'test'}:{confirmationSent:true}};}};
+ vm.runInNewContext(fs.readFileSync('push-client.js','utf8'),context);
+ const settle=async()=>{for(let i=0;i<20;i++)await new Promise(r=>setImmediate(r));};
+ return {button,calls,toasts,attrs,storage,elements,settle,requested:()=>requested};
+}
+test('Conserva permiso previo; apagar corta la suscripción antes de borrar el registro y encender registra de nuevo',async()=>{
+ const a=app({preference:'on'});await a.settle();assert.equal(a.attrs['aria-pressed'],'true');assert.equal(a.requested(),0);assert.deepEqual(a.calls,['GET /config','POST /subscription']);
+ a.button.onclick();await a.settle();assert.equal(a.attrs['aria-pressed'],'false');assert.equal(a.storage.get('formula-push-enabled'),'off');assert.deepEqual(a.calls.slice(-2),['unsubscribe','DELETE /subscription']);
+ a.button.onclick();await a.settle();assert.equal(a.attrs['aria-pressed'],'true');assert.ok(a.calls.includes('subscribe'));
+});
+test('Recuerda apagado al reabrir, incluso sin red; no registra ni pide permiso',async()=>{
+ const a=app({preference:'off',offline:true});await a.settle();assert.equal(a.attrs['aria-pressed'],'false');assert.equal(a.requested(),0);assert.ok(!a.calls.includes('POST /subscription'));assert.equal(a.button.textContent,'🔕');
+});
+test('Nuevo dispositivo solo pide permiso al tocar; una baja fallida permite reintentar',async()=>{
+ const a=app({permission:'default'});await a.settle();assert.equal(a.requested(),0);assert.equal(a.calls.length,0);a.button.onclick();await a.settle();assert.equal(a.requested(),1);assert.equal(a.attrs['aria-pressed'],'true');
+ const b=app({unsubscribeFails:true,preference:'on'});await b.settle();b.button.onclick();await b.settle();assert.match(b.button.title,/reintentar/);assert.equal(b.button.textContent,'🔕');assert.equal(b.attrs['data-status'],'error');
+});
+
+test('Espera al receptor actualizado antes de registrar una actualización',async()=>{
+ const a=app({oldReceiver:true,preference:'on'});await a.settle();assert.ok(!a.calls.includes('POST /subscription'));
+ await new Promise(r=>setTimeout(r,300));await a.settle();assert.ok(a.calls.includes('POST /subscription'));assert.equal(a.button.textContent,'🔔');
+});
+
+test('Abrir sin red o con permiso temporal no borra una elección activa ni cambia su campana',async()=>{
+ const a=app({preference:'on',offline:true});await a.settle();assert.equal(a.storage.get('formula-push-enabled'),'on');assert.equal(a.button.textContent,'🔔');assert.equal(a.attrs['data-status'],'error');
+ const b=app({preference:'on',permission:'default'});await b.settle();assert.equal(b.storage.get('formula-push-enabled'),'on');assert.equal(b.attrs['aria-pressed'],'true');assert.equal(b.requested(),0);
+ const reopened=app({preference:a.storage.get('formula-push-enabled')});await reopened.settle();assert.equal(reopened.button.textContent,'🔔');
+ a.button.onclick();await a.settle();assert.equal(a.storage.get('formula-push-enabled'),'on');assert.ok(!a.calls.includes('unsubscribe'));
+});
+
+
+test('Campana con error abre estado sin dar de baja; permiso se pide solo al reparar',async()=>{
+ const a=app({preference:'on',permission:'default',panel:true});await a.settle();
+ a.button.onclick();await a.settle();assert.equal(a.elements.pushPanel.open,true);
+ assert.equal(a.storage.get('formula-push-enabled'),'on');assert.ok(!a.calls.includes('unsubscribe'));assert.equal(a.requested(),0);
+ a.elements.pushRepair.onclick();await a.settle();assert.equal(a.requested(),1);assert.equal(a.storage.get('formula-push-enabled'),'on');
+ a.elements.pushDisable.onclick();await a.settle();assert.equal(a.storage.get('formula-push-enabled'),'off');assert.ok(a.calls.includes('unsubscribe'));
+});
+test('Permiso bloqueado muestra causa en panel y no altera preferencia',async()=>{
+ const a=app({preference:'on',permission:'denied',panel:true});await a.settle();a.button.onclick();
+ assert.match(a.elements.pushStatus.textContent,/Chrome.*bloqueado/);assert.equal(a.storage.get('formula-push-enabled'),'on');assert.equal(a.requested(),0);
+});
+
+test('Permiso concedido por otra app no activa Fórmula 1 sin elección',async()=>{const a=app();await a.settle();assert.equal(a.attrs['aria-pressed'],'false');assert.ok(!a.calls.includes('POST /subscription'));});

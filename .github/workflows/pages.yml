@@ -28,7 +28,7 @@ jobs:
       - name: Preparar solo archivos de la app
         run: |
           mkdir public
-          cp index.html app.js logic.js styles.css manifest.json sw.js icon.svg icon-192.png icon-512.png public/
+          cp push-config.js push-client.js push-receiver.js index.html app.js logic.js styles.css manifest.json sw.js icon.svg icon-192.png icon-512.png public/
           cp -r data public/
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -1,0 +1,30 @@
+{
+  "name": "formula-session-notices",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-07",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": true,
+  "triggers": {
+    "crons": [
+      "* * * * *"
+    ]
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SESSION_NOTICES",
+        "class_name": "SessionNotices"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "SessionNotices"
+      ]
+    }
+  ]
+}

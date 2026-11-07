@@ -12,6 +12,16 @@ Cada carrera y sprint dispone de una parrilla visual independiente de la clasifi
 
 Si la parrilla no está publicada, se indica expresamente y no se dibuja una parrilla supuesta. Se comprueba periódicamente desde el inicio de la clasificación hasta siete días después de la carrera, para recoger cambios oficiales de última hora.
 
+## Avisos de sesiones
+
+La campana permite activar voluntariamente las notificaciones de APP FORMULA en cada dispositivo, ver su estado, desactivarlas o programar una prueba tras 30 segundos con la app cerrada. Se solicita el permiso del navegador al activar. El permiso compartido del dominio de GitHub Pages no activa esta app por sí solo.
+
+El servicio independiente de Cloudflare de `notifications/` programa los avisos diez minutos antes del inicio UTC publicado de cada sesión (libres, clasificación, clasificación sprint, sprint y carrera). El texto muestra la hora de España peninsular y al tocarlo se abre el gran premio. La interfaz permanece en GitHub Pages; el envío continúa con la ventana cerrada. La llegada puede demorarse por el servicio push, la red o Android, por lo que no se garantiza precisión de segundos.
+
+No reproduce recordatorios anteriores al alta. Descarta avisos deportivos detectados con más de 90 segundos de retraso, limita su validez al inicio de la sesión y no genera avisos si la copia de horarios tiene más de seis horas. Comprueba actualizaciones del calendario cada minuto y usa alarmas persistentes para los instantes de aviso. Los cambios oficiales de horario alteran la programación en la próxima comprobación. Suscripciones, preferencias y claves son independientes de otras apps.
+
+Para comprobar la recepción: activar la campana, conceder permiso, pulsar **Probar con app cerrada**, cerrar la ventana y esperar 30 segundos. La aceptación por el proveedor no demuestra que el teléfono lo haya mostrado. Consultar permisos y batería de Android/Chrome si no llega; no forzar la detención de Chrome.
+
 ## Datos y actualización
 
 La única fuente del importador es [formula1.com](https://www.formula1.com/en/racing/2026). El calendario se obtiene de sus eventos estructurados y los resultados y campeonatos de sus tablas públicas. No utiliza una API de terceros ni datos ficticios. Cada tabla incluye un enlace a su publicación original.

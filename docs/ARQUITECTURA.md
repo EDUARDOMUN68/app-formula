@@ -17,3 +17,14 @@ Cada sesión de carrera o sprint incorpora `grid` (o null) y `gridSource`. El im
 
 
 Desde 1.1.1, el esquema de lectura de parrillas es 2. El importador vuelve a consultar las parrillas guardadas con otra versión de esquema aunque hayan transcurrido siete días. Reconoce las formas explícitas required to start, starts/start y will start desde pit lane. Las continuaciones He starts y Required solo se resuelven con un único piloto identificado en la frase inmediatamente anterior; los antecedentes ambiguos y las negaciones no se convierten en salidas desde boxes.
+
+
+## Avisos 1.2.0
+
+La interfaz usa push-config.js, push-client.js y push-receiver.js, importado este último por sw.js. El cliente adapta el flujo de permisos, reparación y prueba con ventana cerrada del sistema de Madridista. El receptor valida identidad, caducidad y ámbito de URL, guarda identificadores en IndexedDB y usa showNotification sin requerir una ventana abierta. Mantiene respaldo si falla el almacenamiento y permite reintentar si falla la presentación. Protocolo FORMULA_PUSH_STATUS versión 1.2.0.
+
+El Worker independiente formula-session-notices usa Web Push/VAPID, un Durable Object SessionNotices y suscripciones privadas almacenadas en él (límite 100 dispositivos). API /config y /subscription con validación de origen, límites de cuerpo y lista permitida de proveedores push. La clave privada se configura como secreto en Cloudflare, nunca en los archivos de aplicación. No se reutilizan las claves ni los registros de Madridista.
+
+El cron por minuto refresca data/season.json publicado; las alarmas persistentes programan el instante diez minutos anterior al inicio. Los identificadores incluyen temporada, gran premio, sesión e inicio para contemplar reprogramaciones. El servicio no reproduce avisos anteriores al alta y deduplica por dispositivo; las suscripciones caducadas se eliminan. TTL hasta el inicio, ventana de detección 90 segundos, validez de la fuente seis horas. El panel distingue registro de suscripción de recepción demostrada.
+
+El workflow Pages publica únicamente la interfaz, los scripts push y los datos. notifications/, dependencias, claves y registros no se incluyen en el artefacto estático. El backend se despliega por separado. Las pruebas Node cubren planificación, dispositivos, receptor y cliente sin enviar notificaciones a teléfonos reales.

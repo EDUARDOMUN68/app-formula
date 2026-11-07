@@ -1,5 +1,14 @@
 # Registro de cambios
 
+## 1.2.0 — 2026-11-07
+
+- Preparados avisos push propios diez minutos antes de cada sesión, con servicio independiente de Cloudflare y horarios oficiales.
+- Campana, panel de estado, baja explícita y prueba de 30 segundos con la app cerrada.
+- Receptor sin ventana, deduplicación, descarte de avisos caducados y acceso directo al gran premio.
+- Caché 1.2.0 limitada a esta aplicación para no borrar las cachés de otras apps del mismo dominio.
+
+La entrega real depende del despliegue y configuración del servicio, el permiso del navegador y su comprobación en el móvil.
+
 ## 1.1.1 — 2026-11-07
 
 - Corregida la detección de salidas desde boxes en notas como «He starts from the pit lane», con antecedente inequívoco.
