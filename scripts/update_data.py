@@ -14,6 +14,7 @@ from html.parser import HTMLParser
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://www.formula1.com'
 YEAR = int(os.environ.get('F1_SEASON', dt.datetime.now(dt.timezone.utc).year))
+GRID_SCHEMA_VERSION = 2
 LABELS = {'Practice 1':'Libres 1','Practice 2':'Libres 2','Practice 3':'Libres 3','Sprint Qualifying':'Clasificación sprint','Sprint':'Sprint','Qualifying':'Clasificación','Race':'Carrera'}
 SLUGS = {'Practice 1':'practice/1','Practice 2':'practice/2','Practice 3':'practice/3','Sprint Qualifying':'sprint-qualifying','Sprint':'sprint-results','Qualifying':'qualifying','Race':'race-result'}
 
@@ -64,21 +65,30 @@ def starting_grid(source):
     notes = note.group(1) if note else ''
     def normalize(value):
         return ''.join(c for c in unicodedata.normalize('NFKD', value.casefold()) if not unicodedata.combining(c))
-    pit_subjects = re.findall(r'(?:^|[.!?])\s*([^.!?]+?)\s+(?:(?:is|are)\s+)?required to start from (?:the )?pit lane', notes, re.I)
+    pit_subjects = []
+    pit_action = r'(?:(?:(?:is|are|was|were)\s+)?required to start|starts?|will start)\s+from (?:the )?pit[ -]lane\b'
     sentences = [sentence.strip() for sentence in re.split(r'[.!?]', notes) if sentence.strip()]
-    for previous, current in zip(sentences, sentences[1:]):
-        if re.match(r'Required to start from (?:the )?pit lane\b', current, re.I):
-            # Algunas notas continúan con una segunda frase sin repetir el apellido.
+    for index, current in enumerate(sentences):
+        match = re.match(r'(.+?)\s+' + pit_action, current, re.I)
+        subject = match.group(1) if match else ''
+        if re.search(r'\b(?:not|never)\b', subject, re.I):
+            continue
+        refers_back = normalize(subject) == 'he' or re.match(pit_action, current, re.I)
+        if refers_back and index > 0:
+            # Resolver "He starts..." o "Required..." solo con un antecedente único.
+            previous = sentences[index - 1]
             mentioned = [row for row in result['rows'] if re.search(r'\b'+re.escape(normalize(row[indices['Driver']].split()[-1]))+r'\b', normalize(previous))]
             if len(mentioned) == 1:
                 pit_subjects.append(mentioned[0][indices['Driver']])
+        elif subject:
+            pit_subjects.append(subject)
     pit_numbers = []
     for row in result['rows']:
         surname = normalize(row[indices['Driver']].split()[-1])
         explicit = normalize(row[indices['Pos.']]) in ('pl', 'pit', 'pit lane')
         if explicit or any(re.search(r'\b'+re.escape(surname)+r'\b', normalize(subject)) for subject in pit_subjects):
             pit_numbers.append(row[indices['No.']])
-    return {'results': result, 'pitLaneNumbers': pit_numbers, 'notes': notes, 'schemaVersion': 1}
+    return {'results': result, 'pitLaneNumbers': pit_numbers, 'notes': notes, 'schemaVersion': GRID_SCHEMA_VERSION}
 
 def schema(source):
     for raw in re.findall(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',source,re.S):
@@ -125,7 +135,7 @@ def main():
             old_session = next((s for s in old.get(slug, {}).get('sessions', []) if s['id'] == session['id']), {})
             grid = old_session.get('grid')
             end = dt.datetime.fromisoformat(session['end'].replace('Z', '+00:00'))
-            if qualifying and dt.datetime.fromisoformat(qualifying['start'].replace('Z', '+00:00')) <= now and (not grid or grid.get('schemaVersion') != 1 or now-end < dt.timedelta(days=7)):
+            if qualifying and dt.datetime.fromisoformat(qualifying['start'].replace('Z', '+00:00')) <= now and (not grid or grid.get('schemaVersion') != GRID_SCHEMA_VERSION or now-end < dt.timedelta(days=7)):
                 try:
                     grid = starting_grid(fetch(grid_path))
                 except urllib.error.HTTPError as error:

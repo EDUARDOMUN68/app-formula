@@ -24,6 +24,21 @@ class ImporterTests(unittest.TestCase):
         notes='Alonso granted permission to race after being disqualified. Required to start from the pit lane after car changes.'
         self.assertEqual(module.starting_grid(self.grid_html(notes))['pitLaneNumbers'], ['14'])
 
+    def test_mexico_lawson_pronoun_after_other_penalised_drivers(self):
+        notes='Russell was handed a one-place grid penalty. Alonso starts from the back of the grid. Lawson was handed a one-place grid penalty, and was disqualified from Qualifying for a technical breach. He starts from the pit lane after taking new PU components and changing his set-up under parc ferme conditions.'
+        self.assertEqual(module.starting_grid(self.grid_html(notes))['pitLaneNumbers'], ['30'])
+
+    def test_other_explicit_pit_lane_wording(self):
+        for wording in ['Lawson starts from the pit lane.', 'Lawson will start from the pit lane.', 'Lawson was required to start from the pit lane.', 'Alonso and Lawson start from the pit lane.']:
+            with self.subTest(wording=wording):
+                expected=['14','30'] if wording.startswith('Alonso') else ['30']
+                self.assertEqual(module.starting_grid(self.grid_html(wording))['pitLaneNumbers'],expected)
+
+    def test_ambiguous_pronoun_and_non_pit_penalties_are_not_inferred(self):
+        for notes in ['Alonso and Lawson were penalised. He starts from the pit lane.', 'He starts from the pit lane.', 'Lawson starts from the back of the grid.', 'Lawson will not start from the pit lane.']:
+            with self.subTest(notes=notes):
+                self.assertEqual(module.starting_grid(self.grid_html(notes))['pitLaneNumbers'],[])
+
     def test_driver_name_omits_duplicate_mobile_code(self):
         source='<table><tr><th>Driver</th></tr><tr><td><span class="max-lg:hidden">Fernando</span>&nbsp;<span class="max-md:hidden">Alonso</span><span class="md:hidden">ALO</span></td></tr></table>'
         self.assertEqual(module.table(source)['rows'],[['Fernando Alonso']])

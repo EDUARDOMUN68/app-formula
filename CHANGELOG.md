@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## 1.1.1 — 2026-11-07
+
+- Corregida la detección de salidas desde boxes en notas como «He starts from the pit lane», con antecedente inequívoco.
+- Ampliadas las formas explícitas admitidas y añadidas pruebas de casos ambiguos y penalizaciones de parrilla.
+- Reimportadas las parrillas guardadas con el nuevo lector, incluida la salida de Lawson desde boxes en México.
+
 ## 1.1.0 — 2026-10-31
 
 - Parrillas oficiales de carrera y sprint con dos coches por fila, escalonados y colores por equipo.

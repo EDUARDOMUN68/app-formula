@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-07T15:43:05.474711+00:00",
+  "updatedAt": "2026-11-07T17:25:13.436580+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -1177,7 +1177,7 @@
             },
             "pitLaneNumbers": [],
             "notes": "Stroll, Sainz and Verstappen given permission to start after failing to set a lap time within 107% of the fastest Q1 time in Qualifying.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1279/australia/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1279/australia/starting-grid"
@@ -2007,7 +2007,7 @@
               "23"
             ],
             "notes": "Perez given permission to start after failing to set a lap time within 107% of the fastest Q1 time in Sprint Qualifying. Albon required to start from pit lane after car was modified under Parc Ferme conditions.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1280/china/sprint-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1280/china/sprint-grid"
@@ -2640,7 +2640,7 @@
               "23"
             ],
             "notes": "Albon required to start from pit lane after car was modified under Parc Ferme conditions.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1280/china/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1280/china/starting-grid"
@@ -3868,7 +3868,7 @@
             },
             "pitLaneNumbers": [],
             "notes": "",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1281/japan/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1281/japan/starting-grid"
@@ -4696,7 +4696,7 @@
             },
             "pitLaneNumbers": [],
             "notes": "Alonso and Stroll granted permission to race after both failed to set an SQ1 lap time within the 107% requirement.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1284/miami/sprint-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1284/miami/sprint-grid"
@@ -5329,7 +5329,7 @@
               "6"
             ],
             "notes": "Hadjar granted permisson to race after being disqualified from Qualifying. Required to start from the pit lane after use of additional power unit elements.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1284/miami/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1284/miami/starting-grid"
@@ -6152,7 +6152,7 @@
               "23"
             ],
             "notes": "Albon and Lawson race at stewards' discretion after failing to set a lap time in Sprint Qualifying. Bearman, Gasly, Bottas and Albon required to start from the pit lane after cars were modified whilst under Parc Ferme conditions.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1285/canada/sprint-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1285/canada/sprint-grid"
@@ -6785,7 +6785,7 @@
               "18"
             ],
             "notes": "Stroll required to start from the pit lane after car was modified whilst under Parc Ferme conditions and additional power unit elements were used.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1285/canada/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1285/canada/starting-grid"
@@ -8013,7 +8013,7 @@
             },
             "pitLaneNumbers": [],
             "notes": "",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1286/monaco/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1286/monaco/starting-grid"
@@ -9235,7 +9235,7 @@
               "14"
             ],
             "notes": "Alonso required to start from the pit lane after car was modified whilst under Parc Ferme conditions and additional power unit elements were used.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/starting-grid"
@@ -10463,7 +10463,7 @@
             },
             "pitLaneNumbers": [],
             "notes": "",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1288/austria/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1288/austria/starting-grid"
@@ -11303,7 +11303,7 @@
               "23"
             ],
             "notes": "Albon required to start from the pit lane after car was modified under Parc Ferme conditions.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1289/great-britain/sprint-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1289/great-britain/sprint-grid"
@@ -11934,7 +11934,7 @@
             },
             "pitLaneNumbers": [],
             "notes": "Gasly received a three-place penalty for impeding another driver in Qualifying. Stroll received a 10-place penalty for the use of additional power unit elements.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1289/great-britain/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1289/great-britain/starting-grid"
@@ -13162,7 +13162,7 @@
             },
             "pitLaneNumbers": [],
             "notes": "Alonso and Hadjar required to start from the back of the grid after receiving 20- and 30-place penalties respectively for the use of multiple additional power unit elements. Stroll, Sainz and Norris each received a 10-place penalty for the use of additional power unit elements.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1290/belgium/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1290/belgium/starting-grid"
@@ -14384,7 +14384,7 @@
               "11"
             ],
             "notes": "Hamilton received a three-place penalty for impeding another driver in Qualifying. Antonelli received a three-place penalty for failing to slow for yellow flags in Qualifying. Perez required to start from the pit lane after car was modified under Parce Ferme conditions.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1291/hungary/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1291/hungary/starting-grid"
@@ -15225,7 +15225,7 @@
               "14"
             ],
             "notes": "Sainz and Alonso required to start from the pit lane after cars were modified whilst under Parc Ferme conditions.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1292/netherlands/sprint-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1292/netherlands/sprint-grid"
@@ -15858,7 +15858,7 @@
               "11"
             ],
             "notes": "Perez required to start from the pit lane after car was modified whilst under Parc Ferme conditions.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1292/netherlands/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1292/netherlands/starting-grid"
@@ -17089,7 +17089,7 @@
               "30"
             ],
             "notes": "Antonelli and Albon required to start from the back of the grid after using additional power unit elements. Piastri received a three-place penalty for impeding another driver during Qualifying. Alonso and Lawson required to start from the pit lane after using additional power unit elements and cars being modified under Parc Ferme conditions.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1293/italy/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1293/italy/starting-grid"
@@ -18299,7 +18299,7 @@
               "87"
             ],
             "notes": "Bearman and Stroll permitted to race after failing to set a lap time in Qualifying. Stroll received a 40-place penalty for use of additional power unit elements. Sainz received a three-place penalty for impeding another driver during Qualifying. Bearman required to start from the pit lane after car was modified under Parc Ferme conditions and additional power unit elements used.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1294/spain/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1294/spain/starting-grid"
@@ -19527,7 +19527,7 @@
             },
             "pitLaneNumbers": [],
             "notes": "Alonso penalised 30 places for use of additional power unit elements. Stroll penalised 20 places for use of additional power unit elements. Sainz penalised five places for failing to slow for yellow flags. Perez penalised three places for impeding another driver.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1295/azerbaijan/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1295/azerbaijan/starting-grid"
@@ -20755,7 +20755,7 @@
             },
             "pitLaneNumbers": [],
             "notes": "Colapinto penalised five places for causing a collision at the previous round and a further 10 places for use of additional power unit element. Lindblad penalised 30 places for use of additional power unit elements. Hadjar penalised five places for use of additional power unit element.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1308/bahrain/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1308/bahrain/starting-grid"
@@ -21595,7 +21595,7 @@
               "55"
             ],
             "notes": "Sainz required to start from the pit lane after car was modified whilst under Parc Ferme conditions.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1296/singapore/sprint-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1296/singapore/sprint-grid"
@@ -22230,7 +22230,7 @@
               "6"
             ],
             "notes": "Russell penalised 60 places for use of additional power unit elements. Stroll required to start from the pit lane after car was modified whilst under Parc Ferme conditions. Alonso and Hadjar required to start from the pit lane after cars were modified whilst under Parc Ferme conditions and additional power unit elements were used. Hadjar permitted to start after failing to set a time in Qualifying.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid"
@@ -23460,7 +23460,7 @@
               "18"
             ],
             "notes": "Lindblad penalised five places for use of additional power unit element. Colapinto penalised 10 places for use of additional power unit element. Bortoleto penalised 80 places for use of additional power unit elements. Stroll required to start from the pit lane after car was modified under Parc Ferme conditions and additional power unit elements were used.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1297/united-states/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1297/united-states/starting-grid"
@@ -24686,9 +24686,11 @@
                 ]
               ]
             },
-            "pitLaneNumbers": [],
+            "pitLaneNumbers": [
+              "30"
+            ],
             "notes": "Verstappen was handed a one-place grid penalty for a collision in FP2. Bottas starts from the back of the grid after taking multiple new PU components. Lawson was handed a one-place grid penalty for a collision in FP2, and was disqualified from Qualifying for a technical breach of the rules. He starts from the pit lane after taking new PU components and changing his set-up under parc ferme conditions.",
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1298/mexico/starting-grid"
           },
           "gridSource": "https://www.formula1.com/en/results/2026/races/1298/mexico/starting-grid"
@@ -25098,11 +25100,185 @@
               "No.",
               "Driver",
               "Team",
-              "Time / Gap"
+              "Time / Gap",
+              "Laps"
             ],
             "rows": [
               [
-                "ErrorNo results available"
+                "1",
+                "3",
+                "Max Verstappen",
+                "Red Bull Racing",
+                "1:11.622",
+                "19"
+              ],
+              [
+                "2",
+                "12",
+                "Kimi Antonelli",
+                "Mercedes",
+                "+0.025s",
+                "21"
+              ],
+              [
+                "3",
+                "1",
+                "Lando Norris",
+                "McLaren",
+                "+0.131s",
+                "22"
+              ],
+              [
+                "4",
+                "63",
+                "George Russell",
+                "Mercedes",
+                "+0.184s",
+                "22"
+              ],
+              [
+                "5",
+                "16",
+                "Charles Leclerc",
+                "Ferrari",
+                "+0.274s",
+                "30"
+              ],
+              [
+                "6",
+                "81",
+                "Oscar Piastri",
+                "McLaren",
+                "+0.313s",
+                "20"
+              ],
+              [
+                "7",
+                "41",
+                "Arvid Lindblad",
+                "Racing Bulls",
+                "+0.438s",
+                "25"
+              ],
+              [
+                "8",
+                "30",
+                "Liam Lawson",
+                "Racing Bulls",
+                "+0.549s",
+                "20"
+              ],
+              [
+                "9",
+                "6",
+                "Isack Hadjar",
+                "Red Bull Racing",
+                "+0.591s",
+                "24"
+              ],
+              [
+                "10",
+                "5",
+                "Gabriel Bortoleto",
+                "Audi",
+                "+1.022s",
+                "24"
+              ],
+              [
+                "11",
+                "10",
+                "Pierre Gasly",
+                "Alpine",
+                "+1.022s",
+                "26"
+              ],
+              [
+                "12",
+                "44",
+                "Lewis Hamilton",
+                "Ferrari",
+                "+1.211s",
+                "7"
+              ],
+              [
+                "13",
+                "27",
+                "Nico Hulkenberg",
+                "Audi",
+                "+1.243s",
+                "27"
+              ],
+              [
+                "14",
+                "43",
+                "Franco Colapinto",
+                "Alpine",
+                "+1.303s",
+                "25"
+              ],
+              [
+                "15",
+                "51",
+                "Rafael Câmara",
+                "Haas F1 Team",
+                "+1.359s",
+                "19"
+              ],
+              [
+                "16",
+                "87",
+                "Oliver Bearman",
+                "Haas F1 Team",
+                "+1.487s",
+                "20"
+              ],
+              [
+                "17",
+                "23",
+                "Alexander Albon",
+                "Williams",
+                "+1.525s",
+                "25"
+              ],
+              [
+                "18",
+                "14",
+                "Fernando Alonso",
+                "Aston Martin",
+                "+1.549s",
+                "23"
+              ],
+              [
+                "19",
+                "55",
+                "Carlos Sainz",
+                "Williams",
+                "+1.681s",
+                "21"
+              ],
+              [
+                "20",
+                "11",
+                "Sergio Perez",
+                "Cadillac",
+                "+1.951s",
+                "32"
+              ],
+              [
+                "21",
+                "77",
+                "Valtteri Bottas",
+                "Cadillac",
+                "+2.100s",
+                "19"
+              ],
+              [
+                "22",
+                "18",
+                "Lance Stroll",
+                "Aston Martin",
+                "+3.144s",
+                "7"
               ]
             ]
           },
