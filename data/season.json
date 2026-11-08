@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-08T13:35:05.474089+00:00",
+  "updatedAt": "2026-11-08T18:51:53.541170+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -25621,17 +25621,17 @@
                 ],
                 [
                   "12",
-                  "41",
-                  "Arvid Lindblad",
-                  "Racing Bulls",
-                  "1:31.687"
-                ],
-                [
-                  "13",
                   "55",
                   "Carlos Sainz",
                   "Williams",
                   "1:31.785"
+                ],
+                [
+                  "13",
+                  "43",
+                  "Franco Colapinto",
+                  "Alpine",
+                  "1:33.327"
                 ],
                 [
                   "14",
@@ -25642,31 +25642,31 @@
                 ],
                 [
                   "15",
-                  "43",
-                  "Franco Colapinto",
-                  "Alpine",
-                  "1:33.327"
-                ],
-                [
-                  "16",
                   "10",
                   "Pierre Gasly",
                   "Alpine",
                   "1:33.449"
                 ],
                 [
-                  "17",
+                  "16",
                   "18",
                   "Lance Stroll",
                   "Aston Martin",
                   "1:33.653"
                 ],
                 [
-                  "18",
+                  "17",
                   "77",
                   "Valtteri Bottas",
                   "Cadillac",
                   "1:33.774"
+                ],
+                [
+                  "18",
+                  "41",
+                  "Arvid Lindblad",
+                  "Racing Bulls",
+                  "1:31.687"
                 ],
                 [
                   "19",
@@ -25699,7 +25699,7 @@
               ]
             },
             "pitLaneNumbers": [],
-            "notes": "Russell has a five-place grid drop and Leclerc a 10-place grid drop for taking on a new ICE. Sergio Perez, Lewis Hamilton and Max Verstappen are all required to start from the back of the grid after taking on a raft of new PU components.",
+            "notes": "Russell penalised five places for use of additional power unit element. Verstappen and Perez each penalised 30 places for use of additional power unit elements. Leclerc penalised 10 places for use of additional power unit element. Hamilton penalised 75 places for use of additional power unit elements. Lindblad and Bortoleto each penalised 10 places for use of additional power unit elements.",
             "schemaVersion": 2,
             "source": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
           },
