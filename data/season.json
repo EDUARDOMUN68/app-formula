@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-20T03:27:59.001954+00:00",
+  "updatedAt": "2026-11-20T13:01:58.127685+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -25953,7 +25953,194 @@
           "name": "Libres 2",
           "start": "2026-11-20T04:00:00.000Z",
           "end": "2026-11-20T05:00:00.000Z",
-          "results": null,
+          "results": {
+            "headers": [
+              "Pos.",
+              "No.",
+              "Driver",
+              "Team",
+              "Time / Gap",
+              "Laps"
+            ],
+            "rows": [
+              [
+                "1",
+                "63",
+                "George Russell",
+                "Mercedes",
+                "1:47.272",
+                "23"
+              ],
+              [
+                "2",
+                "10",
+                "Pierre Gasly",
+                "Alpine",
+                "+0.071s",
+                "16"
+              ],
+              [
+                "3",
+                "16",
+                "Charles Leclerc",
+                "Ferrari",
+                "+0.333s",
+                "28"
+              ],
+              [
+                "4",
+                "6",
+                "Isack Hadjar",
+                "Red Bull Racing",
+                "+1.135s",
+                "20"
+              ],
+              [
+                "5",
+                "81",
+                "Oscar Piastri",
+                "McLaren",
+                "+1.181s",
+                "24"
+              ],
+              [
+                "6",
+                "44",
+                "Lewis Hamilton",
+                "Ferrari",
+                "+1.211s",
+                "26"
+              ],
+              [
+                "7",
+                "1",
+                "Lando Norris",
+                "McLaren",
+                "+1.565s",
+                "22"
+              ],
+              [
+                "8",
+                "12",
+                "Kimi Antonelli",
+                "Mercedes",
+                "+1.771s",
+                "23"
+              ],
+              [
+                "9",
+                "43",
+                "Franco Colapinto",
+                "Alpine",
+                "+1.957s",
+                "15"
+              ],
+              [
+                "10",
+                "14",
+                "Fernando Alonso",
+                "Aston Martin",
+                "+1.959s",
+                "21"
+              ],
+              [
+                "11",
+                "18",
+                "Lance Stroll",
+                "Aston Martin",
+                "+2.510s",
+                "23"
+              ],
+              [
+                "12",
+                "23",
+                "Alexander Albon",
+                "Williams",
+                "+2.557s",
+                "23"
+              ],
+              [
+                "13",
+                "3",
+                "Max Verstappen",
+                "Red Bull Racing",
+                "+2.869s",
+                "9"
+              ],
+              [
+                "14",
+                "11",
+                "Sergio Perez",
+                "Cadillac",
+                "+3.159s",
+                "17"
+              ],
+              [
+                "15",
+                "87",
+                "Oliver Bearman",
+                "Haas F1 Team",
+                "+3.427s",
+                "22"
+              ],
+              [
+                "16",
+                "30",
+                "Liam Lawson",
+                "Racing Bulls",
+                "+3.737s",
+                "12"
+              ],
+              [
+                "17",
+                "41",
+                "Arvid Lindblad",
+                "Racing Bulls",
+                "+3.876s",
+                "13"
+              ],
+              [
+                "18",
+                "55",
+                "Carlos Sainz",
+                "Williams",
+                "+4.299s",
+                "11"
+              ],
+              [
+                "19",
+                "27",
+                "Nico Hulkenberg",
+                "Audi",
+                "+4.535s",
+                "16"
+              ],
+              [
+                "20",
+                "5",
+                "Gabriel Bortoleto",
+                "Audi",
+                "+5.053s",
+                "15"
+              ],
+              [
+                "21",
+                "77",
+                "Valtteri Bottas",
+                "Cadillac",
+                "+5.522s",
+                "14"
+              ],
+              [
+                "22",
+                "51",
+                "Rafael Camara",
+                "Haas F1 Team",
+                "+6.317s",
+                "20"
+              ]
+            ]
+          },
           "source": "https://www.formula1.com/en/results/2026/races/1300/las-vegas/practice/2"
         },
         {
