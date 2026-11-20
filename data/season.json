@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-19T22:13:18.968224+00:00",
+  "updatedAt": "2026-11-20T03:27:59.001954+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -25932,7 +25932,20 @@
           "name": "Libres 1",
           "start": "2026-11-20T00:30:00.000Z",
           "end": "2026-11-20T01:30:00.000Z",
-          "results": null,
+          "results": {
+            "headers": [
+              "Pos.",
+              "No.",
+              "Driver",
+              "Team",
+              "Time / Gap"
+            ],
+            "rows": [
+              [
+                "ErrorNo results available"
+              ]
+            ]
+          },
           "source": "https://www.formula1.com/en/results/2026/races/1300/las-vegas/practice/1"
         },
         {
