@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-27T12:37:54.596099+00:00",
+  "updatedAt": "2026-11-27T22:03:07.202131+00:00",
   "source": "https://www.formula1.com",
   "races": [
     {
@@ -26986,7 +26986,194 @@
           "name": "Libres 1",
           "start": "2026-11-27T13:30:00.000Z",
           "end": "2026-11-27T14:30:00.000Z",
-          "results": null,
+          "results": {
+            "headers": [
+              "Pos.",
+              "No.",
+              "Driver",
+              "Team",
+              "Time / Gap",
+              "Laps"
+            ],
+            "rows": [
+              [
+                "1",
+                "12",
+                "Kimi Antonelli",
+                "Mercedes",
+                "1:23.217",
+                "31"
+              ],
+              [
+                "2",
+                "63",
+                "George Russell",
+                "Mercedes",
+                "+0.507s",
+                "29"
+              ],
+              [
+                "3",
+                "6",
+                "Isack Hadjar",
+                "Red Bull Racing",
+                "+0.661s",
+                "25"
+              ],
+              [
+                "4",
+                "1",
+                "Lando Norris",
+                "McLaren",
+                "+0.850s",
+                "26"
+              ],
+              [
+                "5",
+                "81",
+                "Oscar Piastri",
+                "McLaren",
+                "+0.860s",
+                "30"
+              ],
+              [
+                "6",
+                "3",
+                "Max Verstappen",
+                "Red Bull Racing",
+                "+0.916s",
+                "26"
+              ],
+              [
+                "7",
+                "16",
+                "Charles Leclerc",
+                "Ferrari",
+                "+1.256s",
+                "30"
+              ],
+              [
+                "8",
+                "44",
+                "Lewis Hamilton",
+                "Ferrari",
+                "+1.358s",
+                "27"
+              ],
+              [
+                "9",
+                "41",
+                "Arvid Lindblad",
+                "Racing Bulls",
+                "+1.384s",
+                "27"
+              ],
+              [
+                "10",
+                "10",
+                "Pierre Gasly",
+                "Alpine",
+                "+1.657s",
+                "28"
+              ],
+              [
+                "11",
+                "5",
+                "Gabriel Bortoleto",
+                "Audi",
+                "+1.836s",
+                "25"
+              ],
+              [
+                "12",
+                "43",
+                "Franco Colapinto",
+                "Alpine",
+                "+2.192s",
+                "28"
+              ],
+              [
+                "13",
+                "27",
+                "Nico Hulkenberg",
+                "Audi",
+                "+2.220s",
+                "29"
+              ],
+              [
+                "14",
+                "30",
+                "Liam Lawson",
+                "Racing Bulls",
+                "+2.376s",
+                "27"
+              ],
+              [
+                "15",
+                "51",
+                "Rafael Camara",
+                "Haas F1 Team",
+                "+2.468s",
+                "26"
+              ],
+              [
+                "16",
+                "23",
+                "Alexander Albon",
+                "Williams",
+                "+2.475s",
+                "26"
+              ],
+              [
+                "17",
+                "87",
+                "Oliver Bearman",
+                "Haas F1 Team",
+                "+2.549s",
+                "26"
+              ],
+              [
+                "18",
+                "55",
+                "Carlos Sainz",
+                "Williams",
+                "+2.775s",
+                "27"
+              ],
+              [
+                "19",
+                "34",
+                "Jak Crawford",
+                "Aston Martin",
+                "+3.089s",
+                "25"
+              ],
+              [
+                "20",
+                "18",
+                "Lance Stroll",
+                "Aston Martin",
+                "+3.199s",
+                "21"
+              ],
+              [
+                "21",
+                "11",
+                "Sergio Perez",
+                "Cadillac",
+                "+3.469s",
+                "25"
+              ],
+              [
+                "22",
+                "77",
+                "Valtteri Bottas",
+                "Cadillac",
+                "+3.692s",
+                "27"
+              ]
+            ]
+          },
           "source": "https://www.formula1.com/en/results/2026/races/1301/qatar/practice/1"
         },
         {
@@ -26994,7 +27181,194 @@
           "name": "Libres 2",
           "start": "2026-11-27T17:00:00.000Z",
           "end": "2026-11-27T18:00:00.000Z",
-          "results": null,
+          "results": {
+            "headers": [
+              "Pos.",
+              "No.",
+              "Driver",
+              "Team",
+              "Time / Gap",
+              "Laps"
+            ],
+            "rows": [
+              [
+                "1",
+                "12",
+                "Kimi Antonelli",
+                "Mercedes",
+                "1:23.077",
+                "31"
+              ],
+              [
+                "2",
+                "63",
+                "George Russell",
+                "Mercedes",
+                "+0.127s",
+                "33"
+              ],
+              [
+                "3",
+                "1",
+                "Lando Norris",
+                "McLaren",
+                "+0.445s",
+                "31"
+              ],
+              [
+                "4",
+                "81",
+                "Oscar Piastri",
+                "McLaren",
+                "+0.472s",
+                "32"
+              ],
+              [
+                "5",
+                "3",
+                "Max Verstappen",
+                "Red Bull Racing",
+                "+0.499s",
+                "31"
+              ],
+              [
+                "6",
+                "6",
+                "Isack Hadjar",
+                "Red Bull Racing",
+                "+0.506s",
+                "33"
+              ],
+              [
+                "7",
+                "16",
+                "Charles Leclerc",
+                "Ferrari",
+                "+1.022s",
+                "22"
+              ],
+              [
+                "8",
+                "44",
+                "Lewis Hamilton",
+                "Ferrari",
+                "+1.139s",
+                "24"
+              ],
+              [
+                "9",
+                "30",
+                "Liam Lawson",
+                "Racing Bulls",
+                "+1.348s",
+                "32"
+              ],
+              [
+                "10",
+                "41",
+                "Arvid Lindblad",
+                "Racing Bulls",
+                "+1.470s",
+                "33"
+              ],
+              [
+                "11",
+                "5",
+                "Gabriel Bortoleto",
+                "Audi",
+                "+1.537s",
+                "34"
+              ],
+              [
+                "12",
+                "10",
+                "Pierre Gasly",
+                "Alpine",
+                "+1.687s",
+                "14"
+              ],
+              [
+                "13",
+                "27",
+                "Nico Hulkenberg",
+                "Audi",
+                "+1.794s",
+                "25"
+              ],
+              [
+                "14",
+                "23",
+                "Alexander Albon",
+                "Williams",
+                "+2.199s",
+                "32"
+              ],
+              [
+                "15",
+                "43",
+                "Franco Colapinto",
+                "Alpine",
+                "+2.656s",
+                "31"
+              ],
+              [
+                "16",
+                "55",
+                "Carlos Sainz",
+                "Williams",
+                "+2.762s",
+                "30"
+              ],
+              [
+                "17",
+                "51",
+                "Rafael Camara",
+                "Haas F1 Team",
+                "+2.885s",
+                "32"
+              ],
+              [
+                "18",
+                "87",
+                "Oliver Bearman",
+                "Haas F1 Team",
+                "+2.919s",
+                "34"
+              ],
+              [
+                "19",
+                "14",
+                "Fernando Alonso",
+                "Aston Martin",
+                "+2.969s",
+                "27"
+              ],
+              [
+                "20",
+                "18",
+                "Lance Stroll",
+                "Aston Martin",
+                "+3.571s",
+                "15"
+              ],
+              [
+                "21",
+                "77",
+                "Valtteri Bottas",
+                "Cadillac",
+                "+4.317s",
+                "29"
+              ],
+              [
+                "22",
+                "11",
+                "Sergio Perez",
+                "Cadillac",
+                "+4.434s",
+                "27"
+              ]
+            ]
+          },
           "source": "https://www.formula1.com/en/results/2026/races/1301/qatar/practice/2"
         },
         {
